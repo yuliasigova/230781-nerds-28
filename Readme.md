@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [yulya sigova](https://up.htmlacademy.ru/htmlcss/28/user/230781).
-* Наставник: ` Анна Волкова  `.
+* Наставник: [Анна Волкова](https://htmlacademy.ru/profile/id477715) 
 
 ---
 
