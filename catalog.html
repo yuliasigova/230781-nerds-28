@@ -24,29 +24,62 @@
     <main>
         <h1>Магазин готовых шаблонов</h1>
         <section>
-            <h2>Каталог макетов</h2>
-            <div>
+            <h2 class="visually-hidden">Каталог макетов</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
                 <fieldset>
-                    <legend>Сетка</legend>
+                    <legend>Стоимость:</legend>
+                </fieldset>
+                <fieldset>
+                    <legend>Сетка:</legend>
                     <ul>
-                        <li>Адаптивная</li>
-                        <li>Фиксированная</li>
-                        <li>Резиновая</li>
+                        <li>
+                            <input type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                            <label for="filter-adaptive">Адаптивная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="grid" value="fixed" id="filter-fixed">
+                            <label for="filter-fixed">Фиксированная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="grid" value="unfixed" id="filter-unfixed">
+                            <label for="filter-unfixed">Резиновая</label>
+                        </li>
                     </ul>
                 </fieldset>
                 <fieldset>
-                    <legend>Особенности</legend>
+                    <legend>Особенности:</legend>
                     <ul>
-                        <li>Слайдер</li>
-                        <li>Блок преимуществ</li>
-                        <li>Новости</li>
-                        <li>Галерея</li>
-                        <li>Корзина</li>
+                        <li>
+                            <input type="checkbox" name="slide" id="filter-slide" checked>
+                            <label for="filter-slide">Слайдер</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="advantages" id="filter-advantages">
+                            <label for="filter-advantages">Блок преимуществ</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="news" id="filter-news" checked>
+                            <label for="filter-news">Новости</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="gallery" id="filter-gallery">
+                            <label for="filter-gallery">Галерея</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="basket" id="filter-basket">
+                            <label for="filter-basket">Корзина</label>
+                        </li>
                     </ul>
                 </fieldset>
-                <button type="button">Показать</button>
-            </div>
+                <button type="submit">Показать</button>
+            </form>
             <div>
+                <p>Сортировать:</p>
+                <ul>
+                    <li>по цене</li>
+                    <li>по типу</li>
+                    <li>по названию</li>
+                </ul>
                 <ul>
                     <li>
                         <article>
@@ -109,13 +142,55 @@
                         </article>
                     </li>
                 </ul>
+                <ul>
+                    <li>
+                        <a>1</a>
+                    </li>
+                    <li>
+                        <a href="blank.html">2</a>
+                    </li>
+                    <li>
+                        <a href="blank.html">3</a>
+                    </li>
+                    <li>
+                        <a href="blank.html">Следующая</a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>
     <footer>
         <section>
-            <h2>Местонахождение</h2>
+            <h2 class="visually-hidden">Местонахождение</h2>
             <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+        </section>
+        <section>
+            <h2 class="visually-hidden">Наши контакты</h2>
+            <span>NЁRDS DESIGN STUDIO</span>
+            <address>191186, Санкт-Петербург,
+                ул. Б. Конюшенная, д. 19/8  </address>
+            <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+            <a href="#">Напишите нам</a>
+        </section>
+        <section>
+            <h2>Напишите нам</h2>
+            <button type="button">Закрыть</button>
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <p>
+                    <label for="name">Ваше имя:</label>
+                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p>
+                    <label for="email">Ваш email:</label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                </p>
+                <p>
+                    <label for="message">Текст письма:</label>
+                    <textarea id="message" name="message" placeholder="В свободной форме">
+                    </textarea>
+                </p>
+                <button type="submit">Отправить</button>
+            </form>
         </section>
         <ul>
             <li>
