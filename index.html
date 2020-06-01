@@ -4,81 +4,86 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="main-header">
         <h1 class="visually-hidden">Студия "Nerds"</h1>
-        <nav>
+        <nav class="main-navigation">
             <a>
                 <img src="img/logo.svg" width="160" height="65" alt="Лого сайта">
             </a>
-            <ul>
+            <ul class="site-navigation">
                 <li><a href="blank.html">Студия</a></li>
                 <li><a href="blank.html">Клиенты</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="blank.html">Контакты</a></li>
             </ul>
-            <a href="blank.html">Корзина</a>
+            <div class="cart">
+                <a href="blank.html">Корзина</a>
+            </div>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="container">
+        <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
-            <ul>
-                <li>
+            <ul class="feature-list">
+                <li class="feature-item">
                     <article>
                         <h3>Долго, дорого, скрупулезно!</h3>
                         <p>Математически выверенный дизайн для вашего сайта или приложения</p>
-                        <a href="blank.html">Узнать больше</a>
+                        <a class="button" href="blank.html">Узнать больше</a>
                     </article>
                 </li>
-                <li>
+                <li class="feature-item">
                     <article>
                         <h3>Любим математику как никто другой</h3>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                        <a href="blank.html">Узнать больше</a>
+                        <a class="button" href="blank.html">Узнать больше</a>
                     </article>
                 </li>
-                <li>
+                <li class="feature-item">
                     <article>
                         <h3>Только ночь, только хардкор</h3>
                         <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                        <a href="blank.html">Узнать больше</a>
+                        <a class="button" href="blank.html">Узнать больше</a>
                     </article>
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="product">
             <h2 class="visually-hidden">Ассортимент</h2>
-            <ul>
-                <li>
+            <ul class="product-list">
+                <li class="product-item">
                     <article>
                         <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
                         <h3>Веб-сайты</h3>
                         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                        <a href="blank.html">Заказать</a>
+                        <a class="button web-button" href="blank.html">Заказать</a>
                     </article>
                 </li>
-                <li>
+                <li class="product-item">
                     <article>
                         <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
                         <h3>Приложения</h3>
                         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                        <a href="blank.html">Заказать</a>
+                        <a class="button apps-button" href="blank.html">Заказать</a>
                     </article>
                 </li>
-                <li>
+                <li class="product-item">
                     <article>
                         <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
                         <h3>Презентации</h3>
                         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                        <a href="blank.html">Заказать</a>
+                        <a class="button presentations-button" href="blank.html">Заказать</a>
                     </article>
                 </li>
             </ul>
         </section>
-        <section>
+        <section class="info">
             <h2 class="visually-hidden">Информация о нас</h2>
             <div>
                 <h3>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h3>
@@ -109,25 +114,25 @@
                 </dl>
             </div>
         </section>
-        <section>
+        <section class="partners">
             <h2 class="visually-hidden">Партнеры</h2>
-            <ul>
-                <li>
+            <ul class="partner-list">
+                <li class="partner-item">
                     <a href="https://htmlacademy.ru/intensive/htmlcss">
                         <img src="img/htmlacademy.png" width="199" height="68" alt="Cайт Htmlacademy">
                     </a>
                 </li>
-                <li>
+                <li class="partner-item">
                     <a href="blank.html">
                         <img src="img/borodinski.png" width="209" height="90" alt="Сайт Barbershop">
                     </a>
                 </li>
-                <li>
+                <li class="partner-item">
                     <a href="blank.html">
                         <img src="img/pink.png" width="185" height="52" alt="Сайт Pink">
                     </a>
                 </li>
-                <li>
+                <li class="partner-item">
                     <a href="blank.html">
                         <img src="img/mishka.png" width="173" height="84" alt="Сайт Mishka">
                     </a>
@@ -135,8 +140,8 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <section>
+    <footer class="main-footer">
+        <section class="footer-contacts">
             <h2 class="visually-hidden">Местонахождение</h2>
             <img src="img/map.jpg" width="1440" height="416" alt="Карта">
             <article>
@@ -145,32 +150,32 @@
                 <address>191186, Санкт-Петербург,
                     ул. Б. Конюшенная, д. 19/8  </address>
                 <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                <a href="#">Напишите нам</a>
+                <a class="button" href="#">Напишите нам</a>
             </article>
         </section>
-        <ul>
+        <ul class="footer-socials">
             <li>
-                <a href="blank.html">Вконтакте
+                <a class="social-button" href="blank.html">Вконтакте
                     <img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
                 </a>
             </li>
             <li>
-                <a href="blank.html">Фейсбук
+                <a class="social-button" href="blank.html">Фейсбук
                     <img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук">
                 </a>
             </li>
             <li>
-                <a href="blank.html">Инстаграм
+                <a class="social-button" href="blank.html">Инстаграм
                     <img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм">
                 </a>
             </li>
         </ul>
-        <div>
+        <div class="friends-offer">
             <p>Давайте дружить, это выгодно!</p>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+            <p class="friends-sale">Скидка 10% для друзей из социальных сетей.</p>
         </div>
     </footer>
-    <section>
+    <section class="popup">
         <h2>Напишите нам</h2>
         <button type="button">Закрыть</button>
         <form action="https://echo.htmlacademy.ru" method="post">
