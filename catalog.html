@@ -12,7 +12,7 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo" href="index.html">
+            <a class="main-header-logo current-logo" href="index.html">
                 <img src="img/logo.svg" width="160" height="65" alt="Лого сайта">
             </a>
             <ul class="site-navigation">
@@ -83,14 +83,20 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button type="submit" class=" button filter-button">Показать</button>
+                <button type="submit" class="button filter-button">Показать</button>
             </form>
             <div class="sort">
                 <p>Сортировать:</p>
-                <ul>
-                    <li>по цене</li>
-                    <li>по типу</li>
-                    <li>по названию</li>
+                <ul class="sort-list">
+                    <li class="sort-item">
+                        <a href="#">по цене</a>
+                    </li>
+                    <li class="sort-item">
+                        <a href="#">по типу</a>
+                    </li>
+                    <li class="sort-item">
+                        <a href="#">по названию</a>
+                    </li>
                 </ul>
                 <ul>
                     <li>
@@ -166,17 +172,17 @@
                         </article>
                     </li>
                 </ul>
-                <ul>
-                    <li>
+                <ul class="pagination-list">
+                    <li class="pagination-item pagination-item-current">
                         <a>1</a>
                     </li>
-                    <li>
+                    <li class="pagination-item">
                         <a href="blank.html">2</a>
                     </li>
-                    <li>
+                    <li class="pagination-item">
                         <a href="blank.html">3</a>
                     </li>
-                    <li>
+                    <li class="pagination-item">
                         <a href="blank.html">Следующая</a>
                     </li>
                 </ul>
@@ -187,12 +193,12 @@
         <section class="footer-contacts">
             <h2 class="visually-hidden">Местонахождение</h2>
             <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-            <article>
+            <article class="footer-address">
                 <h2 class="visually-hidden">Наши контакты</h2>
                 <span>NЁRDS DESIGN STUDIO</span>
                 <address>191186, Санкт-Петербург,
                     ул. Б. Конюшенная, д. 19/8  </address>
-                <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
+                <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
                 <a class="button" href="#">Напишите нам</a>
             </article>
         </section>
