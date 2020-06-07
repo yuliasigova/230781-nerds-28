@@ -20,16 +20,9 @@
     --yellow-hover: #eab534;
     --yellow-active: #e5a722;
 }
-html {
-    height: 100%;
-}
 
 body {
     min-width: 1178px;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    align-content: start;
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
@@ -59,9 +52,39 @@ img {
     overflow: hidden;
 }
 
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+}
+
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
 .main-header,
 .features {
     background-color: var(--basic-gray);
+}
+
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+    padding-top: 50px;
 }
 
 .current-logo img:active {
@@ -69,7 +92,18 @@ img {
 }
 
 .site-navigation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 440px;
+    margin: 0 auto;
+    padding: 0;
     list-style: none;
+    padding-bottom: 10px;
+}
+
+.cart {
+    max-width: 158px;
+    padding-bottom: 10px;
 }
 
 .site-navigation a,
@@ -105,7 +139,10 @@ h1 {
     font-size: 55px;
     line-height: 55px;
     text-align: center;
+    margin: 72px 0 108px 0;
+    padding: 0;
 }
+
 .feature-list {
     list-style: none;
 }
@@ -117,11 +154,31 @@ h1 {
     color: var(--basic-black);
 }
 
+.product {
+    margin-bottom: 80px;
+}
+
 .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
+.product-list:last-child {
+    padding-right: 60px;
+}
+
+.product-item img {
+    width: 300;
+    height: 146;
+    margin-bottom: 20px;
+}
+
 .product-item h3 {
+    margin: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
@@ -177,6 +234,15 @@ h1 {
     background-color: var(--yellow-active);
 }
 
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-more {
+    width: 660px;
+}
+
 .info-more h3 {
     font-weight: 500;
     font-size: 45px;
@@ -205,11 +271,15 @@ h1 {
     line-height: 64px;
     color: var(--basic-black);
 }
+
 .info-features dd {
     line-height: 18px;
 }
 
 .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -225,8 +295,25 @@ h1 {
     opacity: 0.1;
 }
 
-fieldset {
+.page-catalog {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    align-content: start;
+}
+
+.filter fieldset {
+    padding: 0;
+    margin: 0;
     border: none;
+    margin-bottom: 43px;
+}
+
+.filter fieldset:first-child {
+    margin-bottom: 55px;
+}
+
+.sort-list {
+    list-style: none;
 }
 
 .sort-list a {
@@ -248,7 +335,7 @@ fieldset {
 
 .filter legend,
 .layout-info h3,
-.sort p:first-child,
+.sort-catalog p,
 .footer-address span {
     font-weight: 700;
     font-size: 18px;
@@ -257,9 +344,24 @@ fieldset {
     color: var(--basic-black);
 }
 
+.filter {
+    width: 260px;
+    margin-top: 55px;
+}
+
+.filter legend {
+    margin-bottom: 13px;
+}
+
 .filter ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
     line-height: 19px;
+}
+
+.filter-option {
+    margin-bottom: 21px;
 }
 
 .filter-button {
@@ -284,8 +386,39 @@ fieldset {
     opacity: 0.3;
 }
 
+.catalog {
+    margin-left: 120px;
+}
+
+.catalog-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+}
+
+.catalog-item {
+    width: 358px;
+    min-height: 578px;
+    margin-right: 40px;
+    margin-bottom: 31px;
+}
+
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
+}
+
 .layout-info {
+    width: 360px;
+    height: 231px;
     background-color: var(--basic-gray);
+}
+
+.layout-info h3 {
+    padding-top: 26px;
+    padding-bottom: 12px;
 }
 
 .layout-info h3:hover,
@@ -297,10 +430,18 @@ fieldset {
     color: var(--basic-black-30);
 }
 
+.layout-info p {
+    padding: 0;
+}
+
 .layout-info p,
 .footer-address {
     line-height: 18px;
     color: var(--basic-dark-gray);
+}
+
+.pagination-list {
+    list-style: none;
 }
 
 .pagination-item a {
@@ -327,9 +468,18 @@ fieldset {
     background-color: var(--red-hover);
     color: var(--basic-white);
 }
+.contact-social {
+    display: flex;
+    margin-top: 68px;
+    margin-bottom: 68px;
+}
 
 .footer-socials {
+    width: 260px;
+    padding: 0;
+    margin: 0;
     list-style: none;
+    margin-right: 120px;
 }
 
 .social-button {
@@ -342,12 +492,16 @@ fieldset {
     font-size: 36px;
     line-height: 36px;
 }
+.friends-offer p {
+    margin: 0;
+}
 
 .friends-sale {
     color: var(--basic-brown);
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
+    padding-top: 10px;
 }
 
 .button-price:active {
