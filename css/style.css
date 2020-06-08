@@ -69,22 +69,27 @@ img {
     padding: 0 10px;
 }
 
-.main-navigation {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+.main-header {
+    padding-top: 50px;
+    background-color: var(--basic-gray);
 }
 
-.main-header,
+.main-navigation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 160px 1fr 158px;
+    align-items: center;
+    margin: 0;
+    padding: 0;  
+}
+
 .features {
     background-color: var(--basic-gray);
 }
 
 .main-header-logo {
     width: 160px;
-    height: 65px;
-    padding-top: 50px;
+    
 }
 
 .current-logo img:active {
@@ -92,18 +97,19 @@ img {
 }
 
 .site-navigation {
-    display: flex;
-    flex-wrap: wrap;
     width: 440px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 46px;
+    margin: 0;
     padding: 0;
     list-style: none;
-    padding-bottom: 10px;
+    justify-self: center;
 }
 
 .cart {
     max-width: 158px;
-    padding-bottom: 10px;
+    justify-self: end;
 }
 
 .site-navigation a,
@@ -160,7 +166,7 @@ h1 {
 
 .product-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 100px;
     padding: 0;
     margin: 0;
@@ -277,10 +283,16 @@ h1 {
 }
 
 .partner-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    min-height: 183px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
     list-style: none;
+    padding: 0;
+}
+
+.partner-item {
+    margin: 0 auto;  
 }
 
 .partner-item img {
@@ -387,22 +399,23 @@ h1 {
 }
 
 .catalog {
-    margin-left: 120px;
+    margin-left: 140px;
 }
 
 .catalog-list {
+    width: 758px;
     list-style: none;
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
     margin-bottom: 55px;
 }
 
 .catalog-item {
     width: 358px;
     min-height: 578px;
-    margin-right: 40px;
     margin-bottom: 31px;
 }
 
@@ -411,7 +424,7 @@ h1 {
 }
 
 .layout-info {
-    width: 360px;
+    width: 358px;
     height: 231px;
     background-color: var(--basic-gray);
 }
