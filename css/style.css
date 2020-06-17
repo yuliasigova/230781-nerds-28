@@ -929,7 +929,7 @@ input[type="number"]::-webkit-inner-spin-button {
     right: 390px;
 }
 
-.main-footer img {
+.footer-contacts img {
     width: 100%;
 }
 
@@ -991,7 +991,7 @@ address {
     margin-right: 138px;
 }
 
-.footer-socials-list {
+.social-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -999,20 +999,20 @@ address {
     height: 80px;
     margin-right: 9px;
     background-color: var(--basic-gray);
-    border-radius: 50px;
+    border-radius: 50%;
 }
 
-.footer-socials-list:hover,
-.footer-socials-list:focus {
+.social-button:hover,
+.social-button:focus {
     background-color: var(--red-hover);
 }
 
-.footer-socials-list:active {
+.social-button:active {
     background-color: var(--red-active);
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
-.footer-socials-list img:active {
+.social-button:active img {
     opacity: 0.3;
 }
 
@@ -1042,13 +1042,15 @@ address {
 
 .popup {
     display: none;
-    width: 860px;
+    width: 760px;
     height: 527px;
     margin: 0 auto;
     padding-left: 100px;
+    padding-right: 100px;
     padding-top: 63px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
+
 .popup-title {
     font-weight: 700;
     font-size: 45px;
