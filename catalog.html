@@ -120,12 +120,12 @@
                     <ul class="sort-list-up-down">
                         <li class="sort-item-down">
                             <a href="#">
-                                <img src="img/icon-down-dir.svg">
+                                <img src="img/icon-down-dir.svg" width="11" height="10" alt="=Кнопка сортировки">
                             </a>
                         </li>
                         <li class="sort-item-up">
                             <a href="#">
-                                <img src="img/icon-down-dir.svg">
+                                <img src="img/icon-down-dir.svg" width="11" height="10" alt="Кнопка сортировки">
                             </a>
                         </li>
                     </ul>
@@ -133,7 +133,7 @@
                 <ul class="catalog-list">
                     <li class="catalog-item">
                         <article>
-                            <img src="img/sedona.jpg" width="360" height="578" alt="макет Sedona">
+                            <img src="img/sedona.jpg" width="360" height="580" alt="макет Sedona">
                             <div class="layout-info">
                                 <a href="blank.html">
                                     <h3>Sedona</h3>
@@ -145,7 +145,7 @@
                     </li>
                     <li class="catalog-item">
                         <article>
-                            <img src="img/pink.jpg" width="360" height="578" alt="макет Pink">
+                            <img src="img/pink.jpg" width="360" height="580" alt="макет Pink">
                             <div class="layout-info">
                                 <a href="blank.html">
                                     <h3>Pink App</h3>
@@ -181,7 +181,7 @@
                     </li>
                     <li class="catalog-item">
                         <article>
-                            <img src="img/aplus.jpg" width="360" height="578" alt="макет A Plus">
+                            <img src="img/aplus.jpg" width="360" height="580" alt="макет A Plus">
                             <div class="layout-info">
                                 <a href="blank.html">
                                     <h3>A Plus</h3>
@@ -193,7 +193,7 @@
                     </li>
                     <li class="catalog-item">
                         <article>
-                            <img src="img/kvas.jpg" width="360" height="578" alt="макет Кваст">
+                            <img src="img/kvas.jpg" width="360" height="580" alt="макет Кваст">
                             <div class="layout-info">
                                 <a href="blank.html">
                                     <h3>Кваст</h3>
@@ -258,26 +258,25 @@
             </div>
         </div>
     </footer>
-
     <section class="popup">
         <h2 class="popup-title">Напишите нам</h2>
         <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-                <label for="name">Ваше имя:</label>
-                <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-            </p>
-            <p>
-                <label for="email">Ваш email:</label>
-                <input id="email" type="email" name="email" placeholder="email@example.com">
-            </p>
+            <div class="popup-info">
+                <p> <label for="name">Ваше имя:</label>
+                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                </p>
+                <p> <label for="email">Ваш email:</label>
+                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                </p>
+            </div>
             <p>
                 <label for="message">Текст письма:</label>
                 <textarea id="message" name="message" placeholder="В свободной форме">
                 </textarea>
             </p>
-            <button type="submit" class="button">Отправить</button>
+            <button type="submit" class="button popup-button">Отправить</button>
         </form>
-        <button type="button" class="popup-close">Закрыть</button>
+        <button type="button" class="popup-close" aria-label="Закрыть"></button>
     </section>
 </body>
 
