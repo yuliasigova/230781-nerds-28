@@ -989,26 +989,37 @@ input[type="number"]::-webkit-inner-spin-button {
     color: var(--basic-white);
 }
 
-.main-footer {
+.footer-contacts {
+    height: 416px;
+    display: flex;
+    
     position: relative;
 }
 
-.main-footer::before {
+.footer-container {
+    
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+.footer-contacts::after {
     content: "";
     position: absolute;
     width: 231px;
     height: 190px;
     background-image: url(../img/map-marker.png);
     background-repeat: no-repeat;
-    top: 87px;
-    right: 390px;
+    top: 86px;
+    right: 390px;  
 }
 
 .footer-contacts img {
     width: 100%;
 }
 
-.footer-address {
+.footer-container .footer-address {
     width: 319px;
     line-height: 18px;
     color: var(--basic-dark-gray);
@@ -1053,8 +1064,8 @@ address {
 
 .contact-social {
     display: flex;
-    margin-top: 65px;
-    margin-bottom: 68px;
+    padding-top: 68px;
+    padding-bottom: 68px;
 }
 
 .footer-socials {
@@ -1116,14 +1127,20 @@ address {
 }
 
 .popup {
-    position: relative;
+    display: none;
     margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 63px;
     padding-bottom: 85px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    background-color: var(--basic-white);
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 180px;
 }
+    
 
 .popup-title {
     font-weight: 700;
