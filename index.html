@@ -153,21 +153,33 @@
             </ul>
         </section>
     </main>
+
     <footer class="main-footer">
         <section class="footer-contacts">
-            <h2 class="visually-hidden">Местонахождение</h2>
-            <img src="img/map.jpg" width="1440" height="416" alt="Карта">
-            <div class="footer-container">
+            <h2 class="visually-hidden"> Местонахождение </h2>
+            <div class="container">
                 <article class="footer-address">
                     <h2 class="visually-hidden">Наши контакты</h2>
-                    <span class="footer-title">NЁRDS DESIGN STUDIO</span>
-                    <address>191186, Санкт-Петербург,<br>
-                        ул. Б. Конюшенная, д. 19/8</address>
-                    <a class="phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-                    <a class="button button-mail" href="#">Напишите нам</a>
+                    <span class="footer-title"> Nёrds design studio </span>
+                    <address class="address">
+                        191186, Санкт-Петербург,
+                        <br>
+                        ул. Б. Конюшенная, д. 19/8
+                    </address>
+                    <a class="phone" href="tel:+78122757575">
+                        тел. +7 (812) 275-75-75
+                    </a>
+                    <a class="button button-mail" href="#">Напишите нам </a>
                 </article>
             </div>
+            <div class="footer-map">
+                <!-- iframe -->
+                <p>
+                    <img src="img/map.jpg" width="1440" height="416" alt="Карта">
+                </p>
+            </div>
         </section>
+
         <div class="contact-social container">
             <ul class="footer-socials">
                 <li class="footer-socials-list">
@@ -197,21 +209,26 @@
         <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="popup-info">
                 <p> <label for="name">Ваше имя:</label>
-                    <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+                    <input class="name-user" id="name" type="text" name="name" placeholder="Имя Фамилия">
                 </p>
                 <p> <label for="email">Ваш email:</label>
-                    <input id="email" type="email" name="email" placeholder="email@example.com">
+                    <input class="user-email" id="email" type="email" name="email" placeholder="email@example.com">
                 </p>
             </div>
             <p>
                 <label for="message">Текст письма:</label>
-                <textarea id="message" name="message" placeholder="В свободной форме">
+                <textarea class="message"id="message" name="message" placeholder="В свободной форме">
                 </textarea>
             </p>
             <button type="submit" class="button popup-button">Отправить</button>
         </form>
         <button type="button" class="popup-close" aria-label="Закрыть"></button>
     </section>
+
+    <script src="js/modal.js">
+    </script>
+     <script src="js/slider.js">
+     </script>
 </body>
 
 </html>
