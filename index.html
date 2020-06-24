@@ -31,8 +31,16 @@
         <section class="features">
             <div class="container">
                 <h2 class="visually-hidden">Преимущества</h2>
+                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+                <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+                <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+                <div class="slider-controls">
+                    <label for="product-1" aria-label="Первый" tabindex="0"></label>
+                    <label for="product-2" aria-label="Второй" tabindex="0"></label>
+                    <label for="product-3" aria-label="Третий" tabindex="0"></label>
+                </div>
                 <ul class="feature-list">
-                    <li class="feature-item slide-1 slide-current">
+                    <li class="feature-item slide-1">
                         <article>
                             <h3>Долго, дорого,<br> скрупулезно.</h3>
                             <p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения</p>
@@ -57,12 +65,6 @@
                         </article>
                     </li>
                 </ul>
-                <div class="slider-controls">
-                    <button class="slider-button slider-button-current" type="button"
-                        aria-label="Первый слайд"></button>
-                    <button class="slider-button" type="button" aria-label="Второй слайд"></button>
-                    <button class="slider-button" type="button" aria-label="Третий слайд"></button>
-                </div>
             </div>
         </section>
         <section class="product">
@@ -169,7 +171,7 @@
                     <a class="phone" href="tel:+78122757575">
                         тел. +7 (812) 275-75-75
                     </a>
-                    <a class="button button-mail" href="#">Напишите нам </a>
+                    <a class="button button-mail" href="blank.html">Напишите нам </a>
                 </article>
             </div>
             <div class="footer-map">
@@ -205,30 +207,29 @@
         </div>
     </footer>
     <section class="popup">
-        <h2 class="popup-title">Напишите нам</h2>
-        <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="popup-info">
-                <p> <label for="name">Ваше имя:</label>
-                    <input class="name-user" id="name" type="text" name="name" placeholder="Имя Фамилия">
-                </p>
-                <p> <label for="email">Ваш email:</label>
-                    <input class="user-email" id="email" type="email" name="email" placeholder="email@example.com">
-                </p>
-            </div>
-            <p>
-                <label for="message">Текст письма:</label>
-                <textarea class="message"id="message" name="message" placeholder="В свободной форме">
+            <h2 class="popup-title">Напишите нам</h2>
+            <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="popup-info">
+                    <p> <label for="name">Ваше имя:</label>
+                        <input class="name-user" id="name" type="text" name="name" placeholder="Имя Фамилия">
+                    </p>
+                    <p> <label for="email">Ваш email:</label>
+                        <input class="user-email" id="email" type="email" name="email" placeholder="email@example.com">
+                    </p>
+                </div>
+                <p>
+                    <label for="message">Текст письма:</label>
+                    <textarea class="message" id="message" name="message" placeholder="В свободной форме">
                 </textarea>
-            </p>
-            <button type="submit" class="button popup-button">Отправить</button>
-        </form>
-        <button type="button" class="popup-close" aria-label="Закрыть"></button>
+                </p>
+                <button type="submit" class="button popup-button">Отправить</button>
+            </form>
+            <button type="button" class="popup-close" aria-label="Закрыть"></button>
     </section>
 
     <script src="js/modal.js">
     </script>
-     <script src="js/slider.js">
-     </script>
+
 </body>
 
 </html>

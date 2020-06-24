@@ -195,6 +195,7 @@ h1 {
 }
 
 .feature-item {
+    display: none;
     padding: 65px 0 80px 0;
 }
 
@@ -212,7 +213,9 @@ h1 {
     justify-content: space-between;
 }
 
-.slider-button {
+.slider-controls label {
+    display: inline-block;
+    vertical-align: top;
     width: 18px;
     height: 18px;
     background-color: var(--basic-white);
@@ -222,7 +225,9 @@ h1 {
     position: relative;
 }
 
-.slider-button-current::after {
+#product-1:checked ~ .slider-controls label:nth-of-type(1)::after,
+#product-2:checked ~ .slider-controls label:nth-of-type(2)::after,
+#product-3:checked ~ .slider-controls label:nth-of-type(3)::after  {
     content: "";
 
     position: absolute;
@@ -239,8 +244,13 @@ h1 {
     background-image: url(../img/slide-1.png);
     background-repeat: no-repeat;
     background-position: 100% -10px;
-    display: none;
 }
+
+#product-1:checked ~ .feature-list .slide-1, 
+#product-2:checked ~ .feature-list .slide-2, 
+#product-3:checked ~ .feature-list .slide-3 { 
+  display: block; 
+} 
 
 .slide-1 h3 {
     margin-bottom: 27px;
@@ -251,21 +261,15 @@ h1 {
 }
 
 .slide-2 {
-    display: none;
     background-image: url(../img/slide-2.png);
     background-repeat: no-repeat;
     background-position: 100% -10px;
 }
 
 .slide-3 {
-    display: none;
     background-image: url(../img/slide-3.png);
     background-repeat: no-repeat;
     background-position: 100% -10px;
-}
-
-.slide-current {
-    display: block;
 }
 
 .product {
@@ -307,6 +311,7 @@ h1 {
 
 .button {
     display: inline-block;
+    vertical-align: top;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
@@ -686,6 +691,7 @@ input[type="number"]::-webkit-inner-spin-button {
     color: var(--basic-black-30);
 }
 
+
 .filter input:hover {
     opacity: 1;
 }
@@ -898,6 +904,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .layout-info h3 {
     display: inline-block;
+    vertical-align: top;
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
@@ -1142,6 +1149,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .popup {
     display: none;
     margin: 0 auto;
+    width: 760px;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 63px;
@@ -1149,10 +1157,12 @@ input[type="number"]::-webkit-inner-spin-button {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     background-color: var(--basic-white);
     position: fixed;
-    left: 240px;
+    z-index: 3;
+    left: 0;
+    right: 0;
     bottom: 180px;
-    z-index: 50;
 }
+
 
 .popup-show {
     display: block;
@@ -1296,9 +1306,9 @@ input[type="email"]:invalid {
     100% {
       transform: translateY(0);
     }
-  }
+}
 
-  @keyframes shake {
+@keyframes shake {
     0%, 100% {
       transform: translateX(0);
     }
@@ -1310,4 +1320,4 @@ input[type="email"]:invalid {
     20%, 40%, 60%, 80% {
       transform: translateX(10px);
     }
-  }
+}
