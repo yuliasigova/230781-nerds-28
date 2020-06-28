@@ -4,7 +4,7 @@ var popupClose = document.querySelector(".popup-close");
 var userName = popup.querySelector(".name-user");
 var form = popup.querySelector(".popup-form");
 var userEmail = popup.querySelector(".user-email");
-var userMessage = popup.querySelector(".message");
+var userMessage = popup.querySelector(".user-message");
 
 var isStorageSupport = true;
 var storage = "";

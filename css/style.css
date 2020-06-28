@@ -169,13 +169,14 @@ img {
     bottom: -22px;
 }
 
-h1 {
+.main-header h1 {
     font-weight: 500;
     font-size: 55px;
     line-height: 55px;
     text-align: center;
     margin: 0;
     padding: 66px 15px 108px 0;
+    color: var(--basic-black);
 }
 
 .features {
@@ -314,6 +315,7 @@ h1 {
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    color: var(--basic-black);
 }
 
 .product-item p {
@@ -1262,7 +1264,7 @@ input[type="email"] {
     border-radius: 3px;
 }
 
-textarea {
+.user-message {
     width: 740px;
     height: 98px;
     padding-top: 16px;
