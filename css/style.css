@@ -7,7 +7,7 @@
     --shadow-black-40: rgba(0, 0, 0, 0.4);
     --basic-brown-50: rgba(68, 68, 68, 0.5);
     --button-active-shadow: rgba(0, 1, 1, 0.1);
-    --basic-sort-link:#231F20;
+    --basic-sort-link: #231f20;
     --basic-brown: #444444;
     --basic-dark: #283136;
     --basic-dark-gray: #666666;
@@ -84,7 +84,6 @@ img {
 .main-header {
     padding-top: 48px;
     background-color: var(--basic-gray);
-
 }
 
 .main-navigation {
@@ -98,7 +97,6 @@ img {
 
 .main-header-logo {
     width: 160px;
-    
 }
 
 .current-logo img:active {
@@ -646,13 +644,13 @@ img {
     font-size: inherit;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.price-controls input[type="number"]::-webkit-outer-spin-button,
+.price-controls input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-input[type="number"] {
+.price-controls input[type="number"] {
     -moz-appearance: textfield;
 }
 
@@ -893,7 +891,8 @@ input[type="number"] {
 .sort-list a:active {
     color: var(--basic-black);
 }
-.sort-item-current a{
+
+.sort-item-current a {
     color: var(--basic-black);
 }
 
@@ -1258,8 +1257,8 @@ input[type="number"] {
     margin-bottom: 9px;
 }
 
-input[type="text"],
-input[type="email"] {
+.name-user,
+.user-email {
     width: 326px;
     padding-top: 16px;
     padding-left: 16px;
@@ -1280,9 +1279,9 @@ input[type="email"] {
     margin-bottom: 42px;
 }
 
-input[type="text"]::placeholder,
-input[type="email"]::placeholder,
-textarea::placeholder {
+.name-user::placeholder,
+.user-email::placeholder,
+.user-message::placeholder {
     font-family: "Roboto", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -1317,27 +1316,26 @@ textarea::placeholder {
     opacity: 0.1;
 }
 
-input[type="text"]:hover,
-input[type="email"]:hover,
-textarea:hover {
+.name-user:hover,
+.user-email:hover,
+.user-message:hover {
     border-color: var(--border-hover);
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
+.name-user:focus,
+.user-email:focus,
+.user-message:focus {
     outline: none;
     border-color: var(--basic-black);
 }
 
-input[type="text"]:focus::placeholder,
-input[type="email"]:focus::placeholder,
-textarea:focus::placeholder {
+.name-user:focus::placeholder,
+.user-email:focus::placeholder,
+.user-message:focus::placeholder {
     color: var(--basic-brown);
 }
 
-input[type="text"]:invalid,
-input[type="email"]:invalid {
+.popup-info input:invalid {
     border-color: var(--red-hover);
     color: var(--red-hover);
 }
