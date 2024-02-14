@@ -4,4 +4,4 @@
 
 ### Демо
 
-[https://yuliasigova.github.io/230781-nerds-28/]
+https://yuliasigova.github.io/230781-nerds-28/
